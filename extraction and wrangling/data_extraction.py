@@ -49,7 +49,7 @@ def fetch_flight_data(api_key: str, limit: int = 100, output_path: str = "data/r
         raise Exception(f"Failed to fetch data. Status code: {response.status_code} | Response: {response.text}")
 
 if __name__ == "__main__":
-    API_KEY = "0465ee22c19ff1b147d3e525c1e81b49"
+    API_KEY = "API KEY"
     try:
         fetch_flight_data(api_key=API_KEY)
     except Exception as e:
