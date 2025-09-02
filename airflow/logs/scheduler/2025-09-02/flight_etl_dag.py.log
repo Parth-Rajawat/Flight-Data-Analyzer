@@ -1,0 +1,89 @@
+[2025-09-02T17:42:00.536+0530] {processor.py:186} INFO - Started process (PID=31523) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:42:00.536+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:42:00.537+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:42:00.537+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:42:00.714+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:42:00.714+0530] {dagbag.py:387} ERROR - Failed to import: /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+Traceback (most recent call last):
+  File "/Users/parthmac/Desktop/Projects/Flight Data Engineering/flight-env/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py", line 3, in <module>
+    from airflow.providers.papermill.operators.papermill import PapermillOperator
+  File "/Users/parthmac/Desktop/Projects/Flight Data Engineering/flight-env/lib/python3.12/site-packages/airflow/providers/papermill/operators/papermill.py", line 27, in <module>
+    from airflow.providers.common.compat.lineage.entities import File
+ModuleNotFoundError: No module named 'airflow.providers.common.compat.lineage.entities'
+[2025-09-02T17:42:00.714+0530] {processor.py:927} WARNING - No viable dags retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:42:00.915+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.379 seconds
+[2025-09-02T17:43:24.951+0530] {processor.py:186} INFO - Started process (PID=31720) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:43:24.951+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:43:24.951+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:43:24.951+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:43:25.149+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:43:25.148+0530] {dagbag.py:387} ERROR - Failed to import: /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+Traceback (most recent call last):
+  File "/Users/parthmac/Desktop/Projects/Flight Data Engineering/flight-env/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py", line 3, in <module>
+    from airflow.providers.papermill.operators.papermill import PapermillOperator
+  File "/Users/parthmac/Desktop/Projects/Flight Data Engineering/flight-env/lib/python3.12/site-packages/airflow/providers/papermill/operators/papermill.py", line 27, in <module>
+    from airflow.providers.common.compat.lineage.entities import File
+ModuleNotFoundError: No module named 'airflow.providers.common.compat.lineage.entities'
+[2025-09-02T17:43:25.149+0530] {processor.py:927} WARNING - No viable dags retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:43:25.371+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.421 seconds
+[2025-09-02T17:46:24.802+0530] {processor.py:186} INFO - Started process (PID=32463) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:46:24.802+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:46:24.802+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:24.802+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:46:24.981+0530] {processor.py:925} INFO - DAG(s) 'flight_pipeline_dag' retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:46:25.056+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.056+0530] {override.py:1900} INFO - Created Permission View: can delete on DAG:flight_pipeline_dag
+[2025-09-02T17:46:25.059+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.059+0530] {override.py:1900} INFO - Created Permission View: can edit on DAG:flight_pipeline_dag
+[2025-09-02T17:46:25.060+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.060+0530] {override.py:1900} INFO - Created Permission View: can read on DAG:flight_pipeline_dag
+[2025-09-02T17:46:25.062+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.062+0530] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:flight_pipeline_dag
+[2025-09-02T17:46:25.063+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.063+0530] {override.py:1900} INFO - Created Permission View: can create on DAG Run:flight_pipeline_dag
+[2025-09-02T17:46:25.065+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.065+0530] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:flight_pipeline_dag
+[2025-09-02T17:46:25.066+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.066+0530] {override.py:1900} INFO - Created Permission View: can read on DAG Run:flight_pipeline_dag
+[2025-09-02T17:46:25.066+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.066+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-02T17:46:25.069+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.069+0530] {dag.py:3262} INFO - Creating ORM DAG for flight_pipeline_dag
+[2025-09-02T17:46:25.071+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:46:25.071+0530] {dag.py:4180} INFO - Setting next_dagrun for flight_pipeline_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-02T17:46:25.076+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.275 seconds
+[2025-09-02T17:47:50.267+0530] {processor.py:186} INFO - Started process (PID=32672) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:47:50.268+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:47:50.268+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:47:50.268+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:47:50.461+0530] {processor.py:925} INFO - DAG(s) 'flight_pipeline_dag' retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:47:50.487+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:47:50.487+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-02T17:47:50.492+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:47:50.492+0530] {dag.py:4180} INFO - Setting next_dagrun for flight_pipeline_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-02T17:47:50.498+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.232 seconds
+[2025-09-02T17:48:43.561+0530] {processor.py:186} INFO - Started process (PID=32728) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:48:43.561+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:48:43.561+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:48:43.561+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:48:43.759+0530] {processor.py:925} INFO - DAG(s) 'flight_pipeline_dag' retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:48:43.786+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:48:43.786+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-02T17:48:43.791+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:48:43.791+0530] {dag.py:4180} INFO - Setting next_dagrun for flight_pipeline_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-02T17:48:43.797+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.237 seconds
+[2025-09-02T17:49:37.804+0530] {processor.py:186} INFO - Started process (PID=32772) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:49:37.804+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:49:37.805+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:49:37.805+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:49:37.995+0530] {processor.py:925} INFO - DAG(s) 'flight_pipeline_dag' retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:49:38.021+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:49:38.021+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-02T17:49:38.026+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:49:38.026+0530] {dag.py:4180} INFO - Setting next_dagrun for flight_pipeline_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-02T17:49:38.031+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.228 seconds
+[2025-09-02T17:50:29.616+0530] {processor.py:186} INFO - Started process (PID=33168) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:50:29.616+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:50:29.616+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:50:29.616+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:50:29.812+0530] {processor.py:925} INFO - DAG(s) 'flight_pipeline_dag' retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:50:29.838+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:50:29.838+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-02T17:50:29.843+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:50:29.843+0530] {dag.py:4180} INFO - Setting next_dagrun for flight_pipeline_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-02T17:50:29.848+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.233 seconds
+[2025-09-02T17:51:19.980+0530] {processor.py:186} INFO - Started process (PID=33211) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:51:19.980+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:51:19.981+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:51:19.981+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:51:20.166+0530] {processor.py:925} INFO - DAG(s) 'flight_pipeline_dag' retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:51:20.192+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:51:20.191+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-02T17:51:20.196+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:51:20.196+0530] {dag.py:4180} INFO - Setting next_dagrun for flight_pipeline_dag to 2025-09-01 00:00:00+00:00, run_after=2025-09-02 00:00:00+00:00
+[2025-09-02T17:51:20.201+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.222 seconds
+[2025-09-02T17:54:04.865+0530] {processor.py:186} INFO - Started process (PID=34705) to work on /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:54:04.865+0530] {processor.py:914} INFO - Processing file /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py for tasks to queue
+[2025-09-02T17:54:04.866+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:54:04.866+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:54:05.048+0530] {processor.py:925} INFO - DAG(s) 'flight_pipeline_dag' retrieved from /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py
+[2025-09-02T17:54:05.075+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:54:05.075+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-09-02T17:54:05.080+0530] {logging_mixin.py:190} INFO - [2025-09-02T17:54:05.080+0530] {dag.py:4180} INFO - Setting next_dagrun for flight_pipeline_dag to 2025-09-02 00:00:00+00:00, run_after=2025-09-03 00:00:00+00:00
+[2025-09-02T17:54:05.085+0530] {processor.py:208} INFO - Processing /Users/parthmac/Desktop/Projects/Flight Data Engineering/airflow/dags/flight_etl_dag.py took 0.221 seconds

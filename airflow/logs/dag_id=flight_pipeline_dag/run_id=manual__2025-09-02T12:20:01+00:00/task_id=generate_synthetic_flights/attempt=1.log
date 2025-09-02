@@ -1,0 +1,30 @@
+[2025-09-02T17:51:41.386+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-02T17:51:41.389+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: flight_pipeline_dag.generate_synthetic_flights manual__2025-09-02T12:20:01+00:00 [queued]>
+[2025-09-02T17:51:41.390+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: flight_pipeline_dag.generate_synthetic_flights manual__2025-09-02T12:20:01+00:00 [queued]>
+[2025-09-02T17:51:41.390+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-09-02T17:51:41.393+0530] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): generate_synthetic_flights> on 2025-09-02 12:20:01+00:00
+[2025-09-02T17:51:41.397+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'flight_pipeline_dag', 'generate_synthetic_flights', 'manual__2025-09-02T12:20:01+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/flight_etl_dag.py', '--cfg-path', '/var/folders/kk/d6w7_wpx76q43_lgsgr3g6x40000gn/T/tmpu2timlgq']
+[2025-09-02T17:51:41.398+0530] {standard_task_runner.py:105} INFO - Job 6: Subtask generate_synthetic_flights
+[2025-09-02T17:51:41.397+0530] {logging_mixin.py:190} WARNING - /Users/parthmac/Desktop/Projects/Flight Data Engineering/flight-env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=33240) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-09-02T17:51:41.398+0530] {standard_task_runner.py:72} INFO - Started process 33243 to run task
+[2025-09-02T17:51:41.409+0530] {task_command.py:467} INFO - Running <TaskInstance: flight_pipeline_dag.generate_synthetic_flights manual__2025-09-02T12:20:01+00:00 [running]> on host parths-macbook-air.local
+[2025-09-02T17:51:41.423+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='noemail@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='flight_pipeline_dag' AIRFLOW_CTX_TASK_ID='generate_synthetic_flights' AIRFLOW_CTX_EXECUTION_DATE='2025-09-02T12:20:01+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-02T12:20:01+00:00'
+[2025-09-02T17:51:41.424+0530] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-09-02T17:51:41.424+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-09-02T17:51:41.424+0530] {logging_mixin.py:190} INFO - Current task name:generate_synthetic_flights state:running start_date:2025-09-02 12:21:41.389091+00:00
+[2025-09-02T17:51:41.424+0530] {logging_mixin.py:190} INFO - Dag name:flight_pipeline_dag and current dag run status:running
+[2025-09-02T17:51:41.424+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2025-09-02T17:51:41.424+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/kk/d6w7_wpx76q43_lgsgr3g6x40000gn/T
+[2025-09-02T17:51:41.425+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "python '/Users/parthmac/Desktop/Projects/Flight Data Engineering/extraction and wrangling/synthetic_flight_generator_script.py'"]
+[2025-09-02T17:51:41.427+0530] {subprocess.py:86} INFO - Output:
+[2025-09-02T17:51:41.914+0530] {subprocess.py:93} INFO - ✅ Yesterday’s records (2025-08-31) already present. No changes made.
+[2025-09-02T17:51:42.179+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-02T17:51:42.184+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-09-02T17:51:42.184+0530] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=flight_pipeline_dag, task_id=generate_synthetic_flights, run_id=manual__2025-09-02T12:20:01+00:00, execution_date=20250902T122001, start_date=20250902T122141, end_date=20250902T122142
+[2025-09-02T17:51:42.186+0530] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-09-02T17:51:42.186+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-09-02T17:51:42.186+0530] {logging_mixin.py:190} INFO - Dag name:flight_pipeline_dag queued_at:2025-09-02 12:20:01.411893+00:00
+[2025-09-02T17:51:42.186+0530] {logging_mixin.py:190} INFO - Task hostname:parths-macbook-air.local operator:BashOperator
+[2025-09-02T17:51:42.191+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-02T17:51:42.197+0530] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-02T17:51:42.198+0530] {local_task_job_runner.py:245} INFO - ::endgroup::
