@@ -24,7 +24,7 @@ The pipeline is scheduled and orchestrated by Apache Airflow (dashed arrows). Da
 
 | Feature                     | Description                                   |
 |-----------------------------|-----------------------------------------------|
-| **Synthetic Data Generation** | Creates **100k flight records for last 10 days if the file is empty, else adds the day before the current day and deletes the data older than 10 days for rolling 10 days window** (airlines, airports, delays, etc.) |
+| **Synthetic Data Generation** | Creates **100k** flight records for **last** 10 days if the file is empty, else adds the day before the current day and deletes the data older than 10 days for rolling 10 days window (airlines, airports, delays, etc.) |
 | **Automated ETL**           | Cleansing, enrichment, and feature engineering using **PySpark** |
 | **Analytical Transformations** | Status trends, busiest airports, delay statistics (visualized with Matplotlib/Plotly) |
 | **Streamlit Dashboard**     | 5+ interactive visual reports powered by MySQL |
