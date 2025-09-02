@@ -60,7 +60,7 @@ DB_CONFIG = {
     "host": "localhost",
     "port": 3306,
     "user": "root",         # 🔹 your MySQL username
-    "password": "Ancestors@1", # 🔹 your MySQL password
+    "password": "password", # 🔹 your MySQL password
     "database": "flight_db"
 }
 
