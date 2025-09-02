@@ -17,6 +17,6 @@ plotly==5.24.1
 apache-airflow==2.10.2
 apache-airflow-providers-papermill==2.2.3
 
-# make sure to run fro apache airflow
+# make sure to run for apache airflow
 pip install -r requirements.txt \
   --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.2/constraints-3.12.txt"
