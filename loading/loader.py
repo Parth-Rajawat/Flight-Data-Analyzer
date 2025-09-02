@@ -17,7 +17,7 @@ def write_to_mysql(
     port: int = 3306,
     database: str = "flight_db",    # 🔹 schema used in "flight database connection"
     user: str = "root",
-    password: str = "Ancestors@1",     # 🔹 replace with your actual MySQL password
+    password: str = "password",     # 🔹 replace with your actual MySQL password
     mode: str = "overwrite"
 ):
     """
