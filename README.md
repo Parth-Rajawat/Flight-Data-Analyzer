@@ -70,7 +70,8 @@ airflow users create \
     --firstname name \
     --lastname name \
     --role Admin \
-    --email admin@example.com
+    --email admin@example.com \
+    --password yourpass
 ```
 
 ### 6. Start Airflow Services
@@ -96,3 +97,5 @@ airflow dags trigger flight_pipeline_dag
 ```bash
 streamlit run app.py
 ```
+
+Please make sure to change the paths in the files so that you do not run into errors.
