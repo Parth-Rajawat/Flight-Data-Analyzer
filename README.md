@@ -31,3 +31,11 @@ This architecture represents a complete end-to-end data engineering pipeline. Th
 | **Streamlit Dashboard**     | 5+ interactive visual reports powered by MySQL |
 | **ML Delay Prediction**     | Random Forest Classifier via **PySpark MLlib (~70% accuracy)** |
 | **Airflow DAG Orchestration** | Daily scheduling, sequential + parallel task execution |
+
+## 🚀 How to Run the Pipeline  
+
+### 1. Clone the Repository  
+```bash
+git clone https://github.com/your-username/flight-data-engineering.git
+cd flight-data-engineering
+```
