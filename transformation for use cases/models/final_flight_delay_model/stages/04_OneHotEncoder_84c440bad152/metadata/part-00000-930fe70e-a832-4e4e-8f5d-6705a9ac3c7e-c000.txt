@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.OneHotEncoderModel","timestamp":1756893170923,"sparkVersion":"4.0.0","uid":"OneHotEncoder_84c440bad152","paramMap":{"outputCol":"airline_iata_ohe","inputCol":"airline_iata_idx"},"defaultParamMap":{"handleInvalid":"error","dropLast":true,"outputCol":"OneHotEncoder_84c440bad152__output"}}

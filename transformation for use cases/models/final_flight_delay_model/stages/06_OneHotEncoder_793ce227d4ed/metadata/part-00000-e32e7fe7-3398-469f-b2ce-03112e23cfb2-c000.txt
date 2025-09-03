@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.OneHotEncoderModel","timestamp":1756893171126,"sparkVersion":"4.0.0","uid":"OneHotEncoder_793ce227d4ed","paramMap":{"outputCol":"arrival_airport_ohe","inputCol":"arrival_airport_idx"},"defaultParamMap":{"outputCol":"OneHotEncoder_793ce227d4ed__output","handleInvalid":"error","dropLast":true}}
