@@ -4,8 +4,8 @@
 This project demonstrates an end-to-end data engineering pipeline for flight analytics and delay prediction. Synthetic flight data is generated, wrangled with PySpark, transformed into multiple analytical views, and loaded into a MySQL database. A Streamlit dashboard visualizes key insights such as flight status trends and busiest airports, while an integrated Random Forest model (~70% accuracy) predicts flight delays. The entire workflow is orchestrated and scheduled daily using Apache Airflow.
 
 ## Architecture:
-<img width="1018" height="507" alt="Screenshot 2025-09-02 at 10 06 45 PM" src="https://github.com/user-attachments/assets/95535b58-bef3-4324-bf9f-062b41c9949c" />
-The pipeline is scheduled and orchestrated by Apache Airflow (dashed arrows). Data flows (solid arrows) from Synthetic Data Generator → PySpark Wrangling → Transformations (status, traffic, delay) → MySQL Database, which powers a Streamlit Dashboard + ML Predictor. The workflow runs automatically every day at midnight.
+<img width="973" height="439" alt="Architecture" src="https://github.com/user-attachments/assets/2be0ac56-e920-48ee-837b-033c6eefd083" />
+This architecture represents a complete end-to-end data engineering pipeline. The process begins at the Source with a Synthetic Flight Generator that produces daily flight records. Data then flows into the Transformation Layer, where PySpark is used for wrangling, cleaning, and analytical transformations such as flight delay prediction, airport traffic analysis, and flight status trends. The outputs are stored in the Destination Layer within a MySQL database. Finally, the Front End is powered by a Streamlit application, which provides an interactive dashboard and integrates a flight delay prediction model. The entire workflow is orchestrated and scheduled by Apache Airflow, which ensures the pipeline runs automatically every day at midnight, handling task sequencing and parallel execution.
 
 ## 🛠 Tech Stack  
 
@@ -30,5 +30,3 @@ The pipeline is scheduled and orchestrated by Apache Airflow (dashed arrows). Da
 | **Streamlit Dashboard**     | 5+ interactive visual reports powered by MySQL |
 | **ML Delay Prediction**     | Random Forest Classifier via **PySpark MLlib (~70% accuracy)** |
 | **Airflow DAG Orchestration** | Daily scheduling, sequential + parallel task execution |
-
-
