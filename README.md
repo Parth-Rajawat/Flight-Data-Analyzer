@@ -4,7 +4,7 @@
 This project demonstrates an end-to-end data engineering pipeline for flight analytics and delay prediction. Synthetic flight data is generated, wrangled with PySpark, transformed into multiple analytical views, and loaded into a MySQL database. A Streamlit dashboard visualizes key insights such as flight status trends and busiest airports, while an integrated Random Forest model (~70% accuracy) predicts flight delays. The entire workflow is orchestrated and scheduled daily using Apache Airflow.
 
 ## Architecture:
-<img width="973" height="439" alt="Architecture" src="https://github.com/user-attachments/assets/2be0ac56-e920-48ee-837b-033c6eefd083" />
+<img width="976" height="439" alt="Architecture" src="https://github.com/user-attachments/assets/2be0ac56-e920-48ee-837b-033c6eefd083" />
 This architecture represents a complete end-to-end data engineering pipeline. The process begins at the Source with a Synthetic Flight Generator that produces daily flight records. Data then flows into the Transformation Layer, where PySpark is used for wrangling, cleaning, and analytical transformations such as flight delay prediction, airport traffic analysis, and flight status trends. The outputs are stored in the Destination Layer within a MySQL database. Finally, the Front End is powered by a Streamlit application, which provides an interactive dashboard and integrates a flight delay prediction model. The entire workflow is orchestrated and scheduled by Apache Airflow, which ensures the pipeline runs automatically every day at midnight, handling task sequencing and parallel execution.
 
 ## 🛠 Tech Stack  
