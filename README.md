@@ -84,3 +84,11 @@ airflow scheduler
 ```bash
 airflow webserver --port 8080
 ```
+**->** Access the Airflow UI at http://localhost:8080
+
+**->** Enable the DAG `flight_pipeline_dag`.
+
+**->** to trigger manually, open a `terminal 3` and run the below code:
+```bash
+airflow dags trigger flight_pipeline_dag
+```
