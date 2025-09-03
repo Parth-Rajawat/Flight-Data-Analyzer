@@ -75,6 +75,7 @@ airflow users create \
 
 ### 6. Start Airflow Services
 Open two terminals and run:
+
 6.1. For `Terminal 1`:
 ```bash
 airflow scheduler
