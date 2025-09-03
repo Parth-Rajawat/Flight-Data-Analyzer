@@ -58,10 +58,12 @@ pip install -r requirements.txt \
 ```SQL
 CREATE DATABASE flight_db;
 ```
-**->** make sure to update these database credentials in `app.py` as well as in `loader.py` as the streamlit page fetches data from MySQL and loader loads the transformed dataframes into MYSQL.
+**->** Make sure to update these database credentials in `app.py` as well as in `loader.py` as the streamlit page fetches data from MySQL and loader loads the transformed dataframes into MYSQL.
+
+**->** 
 
 ### 5. Initialize Airflow
-**->** run the below command
+**->** Run the below command
 ```bash
 export AIRFLOW_HOME=$(pwd)/airflow   # keeps airflow inside project so it does not touch the system
 airflow db init
@@ -89,7 +91,7 @@ airflow webserver --port 8080
 
 **->** Enable the DAG `flight_pipeline_dag`.
 
-**->** to trigger manually, open a `terminal 3` and run the below code:
+**->** To trigger manually, open a `terminal 3` and run the below code:
 ```bash
 airflow dags trigger flight_pipeline_dag
 ```
