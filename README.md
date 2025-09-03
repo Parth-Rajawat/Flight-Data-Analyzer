@@ -60,7 +60,7 @@ CREATE DATABASE flight_db;
 ```
 **->** Make sure to update these database credentials in `app.py` as well as in `loader.py` as the streamlit page fetches data from MySQL and loader loads the transformed dataframes into MYSQL.
 
-**->** 
+**->** Also make sure that the mysql connector jar file is placed inside the jars folder of your pyspark library in the virtual environment, else Pyspark will not be able to connect and load the files to MySQL.
 
 ### 5. Initialize Airflow
 **->** Run the below command
