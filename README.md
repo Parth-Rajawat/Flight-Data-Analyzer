@@ -36,7 +36,7 @@ This architecture represents a complete end-to-end data engineering pipeline. Th
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/your-username/flight-data-engineering.git
+git clone https://github.com/Parth-Rajawat/flight-data-engineering.git
 cd flight-data-engineering
 ```
 
@@ -53,7 +53,33 @@ pip install -r requirements.txt \
   --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.2/constraints-3.12.txt"
 ```
 
-### 4.Set up MySQL Database
+### 4. Set up MySQL Database
+**->** After running the MYSQL server, run the below command to create database
 ```SQL
 CREATE DATABASE flight_db;
+```
+**->** make sure to update these database credentials in `app.py` as well as in `loader.py` as the streamlit page fetches data from MySQL and loader loads the transformed dataframes into MYSQL.
+
+### 5. Initialize Airflow
+**->** run the below command
+```bash
+export AIRFLOW_HOME=$(pwd)/airflow   # keeps airflow inside project so it does not touch the system
+airflow db init
+airflow users create \
+    --username admin \
+    --firstname name \
+    --lastname name \
+    --role Admin \
+    --email admin@example.com
+```
+
+### 6. Start Airflow Services
+Open two terminals and run:
+6.1. For `Terminal 1`:
+```bash
+airflow scheduler
+```
+6.2. For `Terminal 2`:
+```bash
+airflow webserver --port 8080
 ```
