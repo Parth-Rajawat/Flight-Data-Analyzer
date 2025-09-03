@@ -97,7 +97,7 @@ def flatten_struct_columns(df: DataFrame, parent: str = "") -> DataFrame:
 def ndjson_to_clean_flattened_parquet(
     json_path: str,
     parquet_output_path: str,
-    csv_output_path: str = "data/wrangled data/flattened_flight_data_csv",
+    csv_output_path: str = "/Users/parthmac/Desktop/Projects/Flight Data Engineering/data/wrangled data/flattened_flight_data_csv",
     app_name: str = "Flatten_NDJSON_Processor"
 ) -> None:
     """
@@ -147,15 +147,15 @@ def ndjson_to_clean_flattened_parquet(
     finally:
         spark.stop()
 
-if __name__ == "__main__":
-    try:
-        input_file = "data/raw data/flights_raw_data.json"
-        output_file = "data/raw data/flattened_flight_data.json"
-        extract_flight_records_to_ndjson(input_file, output_file)
-        print(f"Extracted records from {input_file} and wrote to {output_file} after flattening.\n")
-        json_path = "data/raw data/flattened_flight_data.json"
-        output_path = "data/wrangled data/flattened_flight_data_parquet"
-        ndjson_to_clean_flattened_parquet(json_path, output_path)
-        print("NDJSON successfully flattened and saved to Parquet")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+
+try:
+    input_file = "/Users/parthmac/Desktop/Projects/Flight Data Engineering/data/raw data/flights_raw_data.json"
+    output_file = "/Users/parthmac/Desktop/Projects/Flight Data Engineering/data/raw data/flattened_flight_data.json"
+    extract_flight_records_to_ndjson(input_file, output_file)
+    print(f"Extracted records from {input_file} and wrote to {output_file} after flattening.\n")
+    json_path = "/Users/parthmac/Desktop/Projects/Flight Data Engineering/data/raw data/flattened_flight_data.json"
+    output_path = "/Users/parthmac/Desktop/Projects/Flight Data Engineering/data/wrangled data/flattened_flight_data_parquet"
+    ndjson_to_clean_flattened_parquet(json_path, output_path)
+    print("NDJSON successfully flattened and saved to Parquet")
+except Exception as e:
+    print(f"An error occurred: {e}")
