@@ -39,3 +39,21 @@ This architecture represents a complete end-to-end data engineering pipeline. Th
 git clone https://github.com/your-username/flight-data-engineering.git
 cd flight-data-engineering
 ```
+
+### 2. Create and Activate Virtual Environment
+```bash
+python3 -m venv flight-env
+source flight-env/bin/activate   # Mac/Linux
+# flight-env\Scripts\activate    # Windows
+```
+
+### 3. Install Requirements
+```bash
+pip install -r requirements.txt \
+  --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.2/constraints-3.12.txt"
+```
+
+### 4.Set up MySQL Database
+```SQL
+CREATE DATABASE flight_db;
+```
